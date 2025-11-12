@@ -1,10 +1,9 @@
 function Home() {
   return (
     <div style={{ textAlign: "center", marginTop: "40px" }}>
-      <h1>Nicole, te amo!</h1>
       <img
-        src="/images/image.png"
-        alt="Gatinho fofo segurando panetone"
+        src="/images/sumnrize-logo-sem-fundo.png"
+        alt="Sumnrize"
         style={{ width: "300px", borderRadius: "16px", marginTop: "20px" }}
       />
     </div>
