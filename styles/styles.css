@@ -1,0 +1,366 @@
+/* ====== GLOBAL ====== */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  background: #050509;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.page-container {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* ====== NAVBAR ====== */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: rgba(0, 0, 0, 0.4);
+  border-bottom: 1px solid rgba(255, 0, 0, 0.4);
+  backdrop-filter: blur(8px);
+}
+
+.nav-content {
+  max-width: 1200px;
+  margin: auto;
+  padding: 14px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-wrapper {
+  position: relative;
+  width: 36px;
+  height: 36px;
+}
+
+/* NEW: larger logo size */
+.large-logo {
+  width: 200px;
+  height: 50px;
+}
+
+.logo-text {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.nav-links a:hover {
+  color: red;
+}
+
+/* ====== BUTTONS ====== */
+.btn-primary {
+  background: #d30a0a;
+  padding: 10px 18px;
+  border-radius: 30px;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  display: inline-block;
+}
+
+.btn-primary:hover {
+  background: #ff1a1a;
+}
+
+.btn-outline {
+  border: 1px solid rgba(255, 0, 0, 0.5);
+  padding: 10px 18px;
+  border-radius: 30px;
+  color: #ff7777;
+  text-decoration: none;
+}
+
+.btn-outline:hover {
+  background: rgba(255, 0, 0, 0.1);
+}
+
+.small-btn {
+  padding: 8px 15px;
+}
+
+/* ====== HERO ====== */
+.hero {
+  padding: 60px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-content {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 40px;
+}
+
+.hero-label {
+  font-size: 12px;
+  letter-spacing: 3px;
+  color: #ff4d4d;
+}
+
+.hero-title {
+  font-size: 38px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.highlight {
+  color: #ff3737;
+}
+
+.hero-description {
+  color: #ccc;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.hero-note {
+  font-size: 12px;
+  color: #888;
+}
+
+/* Mockup */
+.mockup-card {
+  background: rgba(255, 0, 0, 0.1);
+  border: 1px solid rgba(255, 0, 0, 0.4);
+  padding: 20px;
+  border-radius: 14px;
+}
+
+.mockup-title {
+  font-size: 12px;
+  color: #ff8080;
+}
+
+.mockup-block {
+  background: rgba(0, 0, 0, 0.6);
+  margin-top: 10px;
+  padding: 12px;
+  border-radius: 10px;
+}
+
+.mockup-block.dark {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.mockup-label {
+  color: #aaa;
+  font-size: 12px;
+}
+
+/* ====== SECTION BASE ====== */
+.section {
+  padding: 60px 0;
+  border-top: 1px solid rgba(255, 0, 0, 0.4);
+}
+
+.section-grid {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+  display: grid;
+  gap: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.section-title {
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+
+.section-title-func {
+  font-size: 22px;
+  margin-bottom: 8px;
+  padding: 0 40px;
+}
+
+.section-title-mercado {
+  font-size: 22px;
+  margin-bottom: 8px;
+  padding: 0 80px;
+}
+
+.section-text {
+  color: #bbb;
+  font-size: 14px;
+}
+
+/* ====== FEATURES ====== */
+.dark-section {
+  background: #050509;
+}
+
+.features-grid {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.feature-card {
+  background: rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 0, 0, 0.3);
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.feature-title {
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+
+/* ====== CTA ====== */
+.cta {
+  padding: 60px 20px;
+  text-align: center;
+  border-top: 1px solid rgba(255, 0, 0, 0.4);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), black);
+}
+
+.cta-title {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.cta-text {
+  color: #bbb;
+  max-width: 600px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+/* ====== FOOTER ====== */
+.footer {
+  border-top: 1px solid rgba(255, 0, 0, 0.4);
+  padding: 20px;
+  font-size: 12px;
+  color: #777;
+  display: flex;
+  justify-content: space-between;
+  background: black;
+}
+/* ===== FUNCIONALIDADES 2.0 ===== */
+.section-subtitle {
+  text-align: center;
+  color: #aaa;
+  font-size: 15px;
+  margin-top: -10px;
+  margin-bottom: 30px;
+}
+
+.features-wrapper {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+
+  display: grid;
+  gap: 25px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.feature-card2 {
+  background: linear-gradient(145deg, #0a0a0e, #050509);
+  border: 1px solid rgba(255, 0, 0, 0.35);
+  padding: 25px;
+  border-radius: 14px;
+  position: relative;
+  transition: 0.25s ease;
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.05);
+}
+
+.feature-card2:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px rgba(255, 0, 0, 0.25);
+  border-color: rgba(255, 65, 65, 0.8);
+}
+
+.feature-card2 h3 {
+  font-size: 17px;
+  margin-bottom: 8px;
+}
+
+.feature-card2 p {
+  color: #bbb;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+/* ícone decorativo minimalista */
+.feature-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  background: linear-gradient(145deg, #ff2e2e, #990303);
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.4);
+}
+
+/* ===== MERCADO-ALVO 2.0 ===== */
+
+.market-grid {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 20px;
+
+  display: grid;
+  gap: 25px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.market-card {
+  background: #0d0d12;
+  border: 1px solid rgba(255, 0, 0, 0.35);
+  padding: 25px;
+  border-radius: 14px;
+  transition: 0.25s ease;
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.05);
+}
+
+.market-card:hover {
+  transform: translateY(-5px);
+  border-color: rgb(255, 60, 60);
+  box-shadow: 0 0 25px rgba(255, 0, 0, 0.25);
+}
+
+.market-card h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.market-card p {
+  font-size: 14px;
+  color: #bfbfbf;
+}
